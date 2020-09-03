@@ -56,3 +56,4 @@ src/config.h
 src/stamp*
 tools/.deps/
 tools/lmfuse/.deps/
+run/*
