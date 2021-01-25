@@ -2932,7 +2932,7 @@ void parse_config_line(char *line){
   if(strcasecmp(tok,"ether_addr") == 0){
     // 3Com Ethernet address
     extern unsigned char ether_addr[6];
-    extern char ether_iface[30];
+    extern char ether_iface[IFNAMSIZ];
     tok = strtok(NULL," \t\r\n");
     if (tok != NULL) {
       if (strcasecmp(tok,"laa") == 0) {
